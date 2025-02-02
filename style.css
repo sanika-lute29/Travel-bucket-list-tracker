@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/mountain.jpg');
+
+
+header {
+  background-color: #45a049;
+    color: rgb(249, 247, 247);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+main {
+    padding: 30px;
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Bucket List */
+h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: block; /* Ensures each list item is stacked vertically */
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px; /* Adds space between list items */
+    width: 100%; /* Ensure each list item takes full width */
+    box-sizing: border-box; /* Makes sure padding doesn't break the layout */
+}
+
+/* Links in the Bucket List */
+li a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/* Style for Visited Destinations */
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+div {
+    display: block; /* Change to block to ensure the checkbox and text are stacked vertically */
+    margin-bottom: 10px; /* Adds space between each checkbox section */
+}
+
+div input[type="checkbox"]:checked + strong {
+    text-decoration: line-through;
+    color: gray;
+}
+
+div small {
+    color: #777;
+}
+
+/* Empty Bucket List */
+p {
+    font-size: 1.2rem;
+    color: #777;
+    text-align: center;
+}
